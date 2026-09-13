@@ -13,13 +13,8 @@ body {
 	background-color: #FAF9F5;
 }
 #email-button:hover,
-#email-button:focus,
-#email-button:active {
+#email-button:focus {
 	background-color: #E1E0DC;
-}
-#email-button:active:hover,
-#email-button:active:focus {
-	background-color: #CFCECA;
 }
 .dropdown-menu {
 	background-color: #FAF9F5;
