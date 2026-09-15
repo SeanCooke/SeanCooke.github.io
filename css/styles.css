@@ -13,13 +13,6 @@ body {
 #main-image {
 	margin-bottom: 20px;
 }
-.btn-default {
-	background-color: var(--background-color);
-}
-.btn-default:focus,
-.btn-default:hover {
-	background-color: var(--focus);
-}
 .dropdown-menu {
 	background-color: var(--background-color);
 }
@@ -32,4 +25,11 @@ body {
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
 	color: var(--background-color);
+}
+.btn-default {
+	background-color: var(--background-color);
+}
+.btn-default:focus,
+.btn-default:hover {
+	background-color: var(--focus);
 }
