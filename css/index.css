@@ -20,16 +20,13 @@ body {
 .dropdown-menu > li > a:hover {
 	background-color: var(--focus);
 }
-.navbar-inverse .navbar-brand:focus,
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-nav > li > a:focus,
-.navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse :is(.navbar-brand, .navbar-nav > li > a):is(:hover, :focus),
+.navbar-inverse .navbar-nav > .open.open > a {
 	color: var(--background-color);
 }
 .btn-default {
 	background-color: var(--background-color);
 }
-.btn-default:focus,
-.btn-default:hover {
+.btn-default.btn-default:is(:hover, :focus, .focus, :active, .active) {
 	background-color: var(--focus);
 }
