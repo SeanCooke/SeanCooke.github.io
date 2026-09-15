@@ -13,11 +13,11 @@ body {
 #main-image {
 	margin-bottom: 20px;
 }
-#email-button {
+.btn-default {
 	background-color: var(--background-color);
 }
-#email-button:focus,
-#email-button:hover {
+.btn-default:focus,
+.btn-default:hover {
 	background-color: var(--focus);
 }
 .dropdown-menu {
