@@ -1,0 +1,32 @@
+:root {
+	--background-color: #FAF9F5;
+	--focus: #E1E0DC;
+}
+body {
+	margin-top: 50px;
+	background-color: var(--background-color);
+}
+#main-content {
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+#main-image {
+	margin-bottom: 20px;
+}
+.dropdown-menu {
+	background-color: var(--background-color);
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+	background-color: var(--focus);
+}
+.navbar-inverse :is(.navbar-brand, .navbar-nav > li > a):is(:hover, :focus),
+.navbar-inverse .navbar-nav > .open.open > a {
+	color: var(--background-color);
+}
+.btn-default {
+	background-color: var(--background-color);
+}
+.btn-default.btn-default:is(:hover, :focus, :active) {
+	background-color: var(--focus);
+}
