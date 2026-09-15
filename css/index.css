@@ -27,6 +27,6 @@ body {
 .btn-default {
 	background-color: var(--background-color);
 }
-.btn-default.btn-default:is(:hover, :focus, :active, .active) {
+.btn-default.btn-default:is(:hover, :focus, :active) {
 	background-color: var(--focus);
 }
