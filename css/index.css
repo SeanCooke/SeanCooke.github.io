@@ -27,6 +27,7 @@ body {
 .btn-default {
 	background-color: var(--background-color);
 }
-.btn-default:is(:hover, :focus) {
+/* Class doubled to reach the specificity of Bootstrap's .btn-default:active:hover. */
+.btn-default.btn-default:is(:hover, :focus, :active, .active) {
 	background-color: var(--focus);
 }
