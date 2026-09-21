@@ -10,39 +10,34 @@
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="canonical" href="https://sean-cooke.com/">
-		<script src="js/jquery-2.2.0.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js" defer></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<nav class="navbar navbar-expand-sm bg-dark fixed-top" data-bs-theme="dark">
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>                        
-					</button>
-					<a class="navbar-brand" href="index.html">sean-cooke.com</a>
-				</div>
+				<a class="navbar-brand" href="index.html">sean-cooke.com</a>
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li><a href="docs/cooke-sean-resume.pdf">Résumé</a></li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Papers<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="https://www.ahajournals.org/doi/abs/10.1161/CIRCULATIONAHA.119.045562">The Effect of Smartwatch ECGs on AFib Claims</a></li>
-								<li><a href="docs/mlb-salaries.pdf">The Effect of High Salaries on MLB Players</a></li>
-								<li><a href="docs/nfl-extra-points.pdf">Decrease in Mean Value of NFL Extra Points</a></li>
-								<li><a href="docs/multithreading.pdf">Multithreaded Linear Equation Solver</a></li>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="docs/cooke-sean-resume.pdf">Résumé</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Papers</a>
+							<ul class="dropdown-menu" data-bs-theme="light">
+								<li><a class="dropdown-item" href="https://www.ahajournals.org/doi/abs/10.1161/CIRCULATIONAHA.119.045562">The Effect of Smartwatch ECGs on AFib Claims</a></li>
+								<li><a class="dropdown-item" href="docs/mlb-salaries.pdf">The Effect of High Salaries on MLB Players</a></li>
+								<li><a class="dropdown-item" href="docs/nfl-extra-points.pdf">Decrease in Mean Value of NFL Extra Points</a></li>
+								<li><a class="dropdown-item" href="docs/multithreading.pdf">Multithreaded Linear Equation Solver</a></li>
 							</ul>
 						</li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="https://github.com/SeanCooke/nixos-config">nixos-config</a></li>
-								<li><a href="https://github.com/SeanCooke/tweetcloud">tweetcloud</a></li>
-								<li><a href="https://github.com/SeanCooke/ny-baseball-popularity">NY Baseball Team Popularity</a></li>
-								<li><a href="docs/klout-score.pdf">Reverse Engineering Klout Score</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Projects</a>
+							<ul class="dropdown-menu" data-bs-theme="light">
+								<li><a class="dropdown-item" href="https://github.com/SeanCooke/nixos-config">nixos-config</a></li>
+								<li><a class="dropdown-item" href="https://github.com/SeanCooke/tweetcloud">tweetcloud</a></li>
+								<li><a class="dropdown-item" href="https://github.com/SeanCooke/ny-baseball-popularity">NY Baseball Team Popularity</a></li>
+								<li><a class="dropdown-item" href="docs/klout-score.pdf">Reverse Engineering Klout Score</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -50,31 +45,33 @@
 			</div>
 		</nav>
 		<div class="container">
-			<div id="main-content" class="col-md-10 col-md-offset-1">
-				<div id="panel-heading">
+			<div class="row">
+				<div id="main-content" class="col-md-10 offset-md-1">
 					<h1 class="text-center">Sean Cooke</h1>
-				</div>
-				<hr>
-				<div id="panel-body">
-					<div id="main-image" class="col-md-5 col-md-offset-1"> 
-						<img src="images/cooke-sean.jpg" class="img-responsive center-block img-rounded" alt="Sean Cooke" height="400" width="300"/>
-					</div>
-					<div class="col-md-5">
-						<p>
-							Machine Learning Engineer with 10 years of experience. Solves business problems by making predictions with data. Highly qualified with Python, SQL, and Linux. Skilled in Machine Learning, Data Pipelines, Data Visualization, Test Driven Development, and Cloud Computing.
-						</p>
-						<p>
-							Talented with design and efficient implementation of algorithms and data structures. Well-versed with full software development life cycle for heavily used, production applications. Swiss-army knife programmer who thrives working with latest technologies. Passion for creating practical, scalable, data-driven solutions to high value, real-world issues.
-						</p>
-						<a class="btn btn-block btn-social btn-default" href="mailto:SeanCooke8892@gmail.com">
-							<span class="glyphicon glyphicon-envelope"></span> Email
-						</a>
-						<a class="btn btn-block btn-social btn-linkedin" href="https://www.linkedin.com/in/seancooke35/">
-							<span class="fa fa-linkedin"></span> LinkedIn
-						</a>
-						<a class="btn btn-block btn-social btn-github" href="https://github.com/SeanCooke/">
-							<span class="fa fa-github"></span> GitHub
-						</a>
+					<hr>
+					<div class="row">
+						<div id="main-image" class="col-md-5 offset-md-1">
+							<img src="images/cooke-sean.jpg" class="img-fluid d-block mx-auto rounded" alt="Sean Cooke" height="400" width="300"/>
+						</div>
+						<div class="col-md-5">
+							<p>
+								Machine Learning Engineer with 10 years of experience. Solves business problems by making predictions with data. Highly qualified with Python, SQL, and Linux. Skilled in Machine Learning, Data Pipelines, Data Visualization, Test Driven Development, and Cloud Computing.
+							</p>
+							<p>
+								Talented with design and efficient implementation of algorithms and data structures. Well-versed with full software development life cycle for heavily used, production applications. Swiss-army knife programmer who thrives working with latest technologies. Passion for creating practical, scalable, data-driven solutions to high value, real-world issues.
+							</p>
+							<div class="d-grid gap-2">
+								<a class="btn btn-light btn-social" href="mailto:SeanCooke8892@gmail.com">
+									<span class="fa fa-envelope"></span> Email
+								</a>
+								<a class="btn btn-social btn-linkedin" href="https://www.linkedin.com/in/seancooke35/">
+									<span class="fa fa-linkedin"></span> LinkedIn
+								</a>
+								<a class="btn btn-social btn-github" href="https://github.com/SeanCooke/">
+									<span class="fa fa-github"></span> GitHub
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
