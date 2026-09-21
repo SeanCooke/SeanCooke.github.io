@@ -3,7 +3,7 @@
 	--focus: #E1E0DC;
 }
 body {
-	margin-top: 50px;
+	margin-top: 56px;
 	background-color: var(--background-color);
 }
 #main-content {
@@ -13,20 +13,64 @@ body {
 #main-image {
 	margin-bottom: 20px;
 }
+.navbar {
+	--bs-navbar-hover-color: var(--background-color);
+	--bs-navbar-active-color: var(--background-color);
+	--bs-navbar-brand-hover-color: var(--background-color);
+}
 .dropdown-menu {
-	background-color: var(--background-color);
+	--bs-dropdown-bg: var(--background-color);
+	--bs-dropdown-link-hover-bg: var(--focus);
 }
-.dropdown-menu > li > a:focus,
-.dropdown-menu > li > a:hover {
-	background-color: var(--focus);
+.btn-light {
+	--bs-btn-bg: var(--background-color);
+	--bs-btn-border-color: var(--background-color);
+	--bs-btn-hover-bg: var(--focus);
+	--bs-btn-hover-border-color: var(--focus);
+	--bs-btn-active-bg: var(--focus);
+	--bs-btn-active-border-color: var(--focus);
 }
-.navbar-inverse :is(.navbar-brand, .navbar-nav > li > a):is(:hover, :focus),
-.navbar-inverse .navbar-nav > .open.open > a {
-	color: var(--background-color);
+/* icon sits in a divided column on the left, label centered beside it */
+.btn-social {
+	display: flex;
+	align-items: stretch;
+	padding: 0 var(--bs-btn-padding-x) 0 0;
+	text-align: left;
 }
-.btn-default {
-	background-color: var(--background-color);
+.btn-social > img {
+	flex: none;
+	align-self: center;
+	box-sizing: content-box;
+	width: 18px;
+	height: 18px;
+	padding: 9px 13px;
+	border-right: 1px solid rgba(0, 0, 0, .2);
 }
-.btn-default.btn-default:is(:hover, :focus, :active) {
-	background-color: var(--focus);
+.btn-social > span {
+	align-self: center;
+	padding-left: 12px;
+}
+.btn-linkedin {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #007BB6;
+	--bs-btn-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #005983;
+	--bs-btn-hover-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #00405F;
+	--bs-btn-active-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-focus-shadow-rgb: 0, 123, 182;
+}
+.btn-github {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #444444;
+	--bs-btn-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #2B2B2B;
+	--bs-btn-hover-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #191919;
+	--bs-btn-active-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-focus-shadow-rgb: 68, 68, 68;
 }
