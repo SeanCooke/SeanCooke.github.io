@@ -30,47 +30,22 @@ body {
 	--bs-btn-active-bg: var(--focus);
 	--bs-btn-active-border-color: var(--focus);
 }
-/* icon sits in a divided column on the left, label centered beside it */
-.btn-social {
-	display: flex;
-	align-items: stretch;
-	padding: 0 var(--bs-btn-padding-x) 0 0;
-	text-align: left;
-}
-.btn-social > img {
-	flex: none;
-	align-self: center;
-	box-sizing: content-box;
-	width: 18px;
-	height: 18px;
-	padding: 9px 13px;
-	border-right: 1px solid rgba(0, 0, 0, .2);
-}
-.btn-social > span {
-	align-self: center;
-	padding-left: 12px;
+/* white label on a brand color, darkened on hover and press */
+.btn-brand {
+	--bs-btn-color: #fff;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-active-color: #fff;
+	--bs-btn-bg: rgb(var(--brand));
+	--bs-btn-hover-bg: color-mix(in srgb, rgb(var(--brand)) 72%, #000);
+	--bs-btn-active-bg: color-mix(in srgb, rgb(var(--brand)) 52%, #000);
+	--bs-btn-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-hover-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-active-border-color: rgba(0, 0, 0, .2);
+	--bs-btn-focus-shadow-rgb: var(--brand);
 }
 .btn-linkedin {
-	--bs-btn-color: #fff;
-	--bs-btn-bg: #007BB6;
-	--bs-btn-border-color: rgba(0, 0, 0, .2);
-	--bs-btn-hover-color: #fff;
-	--bs-btn-hover-bg: #005983;
-	--bs-btn-hover-border-color: rgba(0, 0, 0, .2);
-	--bs-btn-active-color: #fff;
-	--bs-btn-active-bg: #00405F;
-	--bs-btn-active-border-color: rgba(0, 0, 0, .2);
-	--bs-btn-focus-shadow-rgb: 0, 123, 182;
+	--brand: 0, 123, 182;
 }
 .btn-github {
-	--bs-btn-color: #fff;
-	--bs-btn-bg: #444444;
-	--bs-btn-border-color: rgba(0, 0, 0, .2);
-	--bs-btn-hover-color: #fff;
-	--bs-btn-hover-bg: #2B2B2B;
-	--bs-btn-hover-border-color: rgba(0, 0, 0, .2);
-	--bs-btn-active-color: #fff;
-	--bs-btn-active-bg: #191919;
-	--bs-btn-active-border-color: rgba(0, 0, 0, .2);
-	--bs-btn-focus-shadow-rgb: 68, 68, 68;
+	--brand: 68, 68, 68;
 }
