@@ -31,7 +31,6 @@ body {
 	--bs-btn-active-bg: var(--focus);
 	--bs-btn-active-border-color: var(--border);
 }
-/* white label on a brand color, darkened on hover and press */
 .btn-brand {
 	--bs-btn-color: #fff;
 	--bs-btn-hover-color: #fff;
