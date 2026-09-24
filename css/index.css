@@ -25,17 +25,15 @@ body {
 	--bs-dropdown-link-hover-bg: var(--focus);
 }
 .list-group-item-neutral {
-	--bs-list-group-color: #000;
 	--bs-list-group-bg: var(--background-color);
 	--bs-list-group-border-color: var(--border);
 	--bs-list-group-action-color: #000;
-	--bs-list-group-action-hover-color: #000;
 	--bs-list-group-action-hover-bg: var(--focus);
 	--bs-list-group-action-active-color: #000;
 	--bs-list-group-action-active-bg: var(--focus);
 }
-.list-group-item-brand {
-	--bs-list-group-color: #fff;
+.list-group-item-linkedin,
+.list-group-item-github {
 	--bs-list-group-bg: rgb(var(--brand));
 	--bs-list-group-border-color: var(--border);
 	--bs-list-group-action-color: #fff;
@@ -44,9 +42,9 @@ body {
 	--bs-list-group-action-active-color: #fff;
 	--bs-list-group-action-active-bg: color-mix(in srgb, rgb(var(--brand)) 52%, #000);
 }
-.brand-linkedin {
+.list-group-item-linkedin {
 	--brand: 0, 123, 182;
 }
-.brand-github {
+.list-group-item-github {
 	--brand: 68, 68, 68;
 }
