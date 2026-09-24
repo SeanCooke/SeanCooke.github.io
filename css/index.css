@@ -23,29 +23,29 @@ body {
 	--bs-dropdown-bg: var(--background-color);
 	--bs-dropdown-link-hover-bg: var(--focus);
 }
-.btn-light {
-	--bs-btn-bg: var(--background-color);
-	--bs-btn-border-color: var(--border);
-	--bs-btn-hover-bg: var(--focus);
-	--bs-btn-hover-border-color: var(--border);
-	--bs-btn-active-bg: var(--focus);
-	--bs-btn-active-border-color: var(--border);
+.list-group-item-neutral {
+	--bs-list-group-color: #000;
+	--bs-list-group-bg: var(--background-color);
+	--bs-list-group-border-color: var(--border);
+	--bs-list-group-action-color: #000;
+	--bs-list-group-action-hover-color: #000;
+	--bs-list-group-action-hover-bg: var(--focus);
+	--bs-list-group-action-active-color: #000;
+	--bs-list-group-action-active-bg: var(--focus);
 }
-.btn-brand {
-	--bs-btn-color: #fff;
-	--bs-btn-hover-color: #fff;
-	--bs-btn-active-color: #fff;
-	--bs-btn-bg: rgb(var(--brand));
-	--bs-btn-hover-bg: color-mix(in srgb, rgb(var(--brand)) 72%, #000);
-	--bs-btn-active-bg: color-mix(in srgb, rgb(var(--brand)) 52%, #000);
-	--bs-btn-border-color: var(--border);
-	--bs-btn-hover-border-color: var(--border);
-	--bs-btn-active-border-color: var(--border);
-	--bs-btn-focus-shadow-rgb: var(--brand);
+.list-group-item-brand {
+	--bs-list-group-color: #fff;
+	--bs-list-group-bg: rgb(var(--brand));
+	--bs-list-group-border-color: var(--border);
+	--bs-list-group-action-color: #fff;
+	--bs-list-group-action-hover-color: #fff;
+	--bs-list-group-action-hover-bg: color-mix(in srgb, rgb(var(--brand)) 72%, #000);
+	--bs-list-group-action-active-color: #fff;
+	--bs-list-group-action-active-bg: color-mix(in srgb, rgb(var(--brand)) 52%, #000);
 }
-.btn-linkedin {
+.brand-linkedin {
 	--brand: 0, 123, 182;
 }
-.btn-github {
+.brand-github {
 	--brand: 68, 68, 68;
 }
