@@ -14,9 +14,10 @@ body {
 #main-image {
 	margin-bottom: 20px;
 }
-.navbar {
+.navbar[data-bs-theme="dark"] {
 	--bs-navbar-hover-color: var(--background-color);
 	--bs-navbar-active-color: var(--background-color);
+	--bs-navbar-brand-color: var(--bs-navbar-color);
 	--bs-navbar-brand-hover-color: var(--background-color);
 }
 .dropdown-menu {
