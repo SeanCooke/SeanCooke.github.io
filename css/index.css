@@ -24,7 +24,7 @@ body {
 	--bs-dropdown-bg: var(--background-color);
 	--bs-dropdown-link-hover-bg: var(--focus);
 }
-.list-group-item-neutral {
+.list-group-item {
 	--bs-list-group-bg: var(--background-color);
 	--bs-list-group-border-color: var(--border);
 	--bs-list-group-action-color: #000;
@@ -35,7 +35,6 @@ body {
 .list-group-item-linkedin,
 .list-group-item-github {
 	--bs-list-group-bg: rgb(var(--brand));
-	--bs-list-group-border-color: var(--border);
 	--bs-list-group-action-color: #fff;
 	--bs-list-group-action-hover-color: #fff;
 	--bs-list-group-action-hover-bg: color-mix(in srgb, rgb(var(--brand)) 72%, #000);
