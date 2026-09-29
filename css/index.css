@@ -1,9 +1,10 @@
 :root {
 	--background-color: #FAF9F5;
 	--focus: #E1E0DC;
+	--border: rgba(0, 0, 0, .2);
 }
 body {
-	margin-top: 50px;
+	margin-top: 56px;
 	background-color: var(--background-color);
 }
 #main-content {
@@ -13,20 +14,36 @@ body {
 #main-image {
 	margin-bottom: 20px;
 }
+.navbar[data-bs-theme="dark"] {
+	--bs-navbar-hover-color: var(--background-color);
+	--bs-navbar-active-color: var(--background-color);
+	--bs-navbar-brand-color: var(--bs-navbar-color);
+	--bs-navbar-brand-hover-color: var(--background-color);
+}
 .dropdown-menu {
-	background-color: var(--background-color);
+	--bs-dropdown-bg: var(--background-color);
+	--bs-dropdown-link-hover-bg: var(--focus);
 }
-.dropdown-menu > li > a:focus,
-.dropdown-menu > li > a:hover {
-	background-color: var(--focus);
+.list-group-item {
+	--bs-list-group-bg: var(--background-color);
+	--bs-list-group-border-color: var(--border);
+	--bs-list-group-action-color: #000;
+	--bs-list-group-action-hover-bg: var(--focus);
+	--bs-list-group-action-active-color: #000;
+	--bs-list-group-action-active-bg: var(--focus);
 }
-.navbar-inverse :is(.navbar-brand, .navbar-nav > li > a):is(:hover, :focus),
-.navbar-inverse .navbar-nav > .open.open > a {
-	color: var(--background-color);
+.list-group-item-linkedin,
+.list-group-item-github {
+	--bs-list-group-bg: rgb(var(--brand));
+	--bs-list-group-action-color: #fff;
+	--bs-list-group-action-hover-color: #fff;
+	--bs-list-group-action-hover-bg: color-mix(in srgb, rgb(var(--brand)) 72%, #000);
+	--bs-list-group-action-active-color: #fff;
+	--bs-list-group-action-active-bg: color-mix(in srgb, rgb(var(--brand)) 52%, #000);
 }
-.btn-default {
-	background-color: var(--background-color);
+.list-group-item-linkedin {
+	--brand: 0, 123, 182;
 }
-.btn-default.btn-default:is(:hover, :focus, :active) {
-	background-color: var(--focus);
+.list-group-item-github {
+	--brand: 68, 68, 68;
 }
