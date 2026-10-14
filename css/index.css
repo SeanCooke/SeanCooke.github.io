@@ -3,7 +3,6 @@
 	--focus: #E1E0DC;
 }
 body {
-	margin-top: 56px;
 	background-color: var(--background-color);
 }
 #main-content {
@@ -13,7 +12,7 @@ body {
 #main-image {
 	margin-bottom: 20px;
 }
-.navbar {
+.navbar[data-bs-theme="dark"] {
 	--bs-navbar-hover-color: var(--background-color);
 	--bs-navbar-active-color: var(--background-color);
 	--bs-navbar-brand-color: var(--bs-navbar-color);
