@@ -21,8 +21,7 @@ body {
 	--bs-navbar-brand-hover-color: var(--background-color);
 }
 .dropdown-menu {
-	--bs-dropdown-bg: var(--background-color);
-	--bs-dropdown-link-hover-bg: var(--focus);
+	--bs-dropdown-border-width: 0;
 }
 .list-group-item {
 	--bs-list-group-bg: var(--background-color);
