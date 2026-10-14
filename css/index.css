@@ -1,7 +1,6 @@
 :root {
 	--background-color: #FAF9F5;
 	--focus: #E1E0DC;
-	--border: rgba(0, 0, 0, .2);
 }
 body {
 	margin-top: 56px;
@@ -25,7 +24,7 @@ body {
 }
 .list-group-item {
 	--bs-list-group-bg: var(--background-color);
-	--bs-list-group-border-color: var(--border);
+	--bs-list-group-border-color: rgba(0, 0, 0, .2);
 	--bs-list-group-action-color: #000;
 	--bs-list-group-action-hover-bg: var(--focus);
 	--bs-list-group-action-active-color: #000;
