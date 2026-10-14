@@ -14,7 +14,7 @@ body {
 #main-image {
 	margin-bottom: 20px;
 }
-.navbar-dark {
+.navbar {
 	--bs-navbar-hover-color: var(--background-color);
 	--bs-navbar-active-color: var(--background-color);
 	--bs-navbar-brand-color: var(--bs-navbar-color);
