@@ -29,6 +29,12 @@ body {
 	--bs-list-group-action-active-color: #000;
 	--bs-list-group-action-active-bg: var(--focus);
 }
+.list-group-item-linkedin {
+	--brand: 0, 123, 182;
+}
+.list-group-item-github {
+	--brand: 68, 68, 68;
+}
 .list-group-item-linkedin,
 .list-group-item-github {
 	--bs-list-group-bg: rgb(var(--brand));
@@ -37,10 +43,4 @@ body {
 	--bs-list-group-action-hover-bg: color-mix(in srgb, rgb(var(--brand)) 72%, #000);
 	--bs-list-group-action-active-color: #fff;
 	--bs-list-group-action-active-bg: color-mix(in srgb, rgb(var(--brand)) 52%, #000);
-}
-.list-group-item-linkedin {
-	--brand: 0, 123, 182;
-}
-.list-group-item-github {
-	--brand: 68, 68, 68;
 }
