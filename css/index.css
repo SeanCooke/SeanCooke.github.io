@@ -5,13 +5,6 @@
 body {
 	background-color: var(--background-color);
 }
-#main-content {
-	margin-top: 20px;
-	padding-bottom: 20px;
-}
-#main-image {
-	margin-bottom: 20px;
-}
 .navbar[data-bs-theme="dark"] {
 	--bs-navbar-hover-color: var(--background-color);
 	--bs-navbar-active-color: var(--background-color);
@@ -23,24 +16,24 @@ body {
 }
 .list-group-item {
 	--bs-list-group-bg: var(--background-color);
-	--bs-list-group-border-color: rgba(0, 0, 0, .2);
+	--bs-list-group-border-color: var(--bs-border-color-translucent);
 	--bs-list-group-action-color: #000;
 	--bs-list-group-action-hover-bg: var(--hover);
 	--bs-list-group-action-active-color: #000;
 	--bs-list-group-action-active-bg: color-mix(in srgb, var(--hover) 85%, #000);
 }
 .list-group-item-linkedin {
-	--brand: 0, 123, 182;
+	--brand: #007BB6;
 }
 .list-group-item-github {
-	--brand: 68, 68, 68;
+	--brand: #444;
 }
 .list-group-item-linkedin,
 .list-group-item-github {
-	--bs-list-group-bg: rgb(var(--brand));
+	--bs-list-group-bg: var(--brand);
 	--bs-list-group-action-color: #fff;
 	--bs-list-group-action-hover-color: #fff;
-	--bs-list-group-action-hover-bg: color-mix(in srgb, rgb(var(--brand)) 72%, #000);
+	--bs-list-group-action-hover-bg: color-mix(in srgb, var(--brand), #000 28%);
 	--bs-list-group-action-active-color: #fff;
-	--bs-list-group-action-active-bg: color-mix(in srgb, rgb(var(--brand)) 52%, #000);
+	--bs-list-group-action-active-bg: color-mix(in srgb, var(--brand), #000 48%);
 }
