@@ -1,6 +1,6 @@
 :root {
 	--background-color: #FAF9F5;
-	--focus: #E1E0DC;
+	--hover: #E1E0DC;
 }
 body {
 	background-color: var(--background-color);
@@ -25,9 +25,9 @@ body {
 	--bs-list-group-bg: var(--background-color);
 	--bs-list-group-border-color: rgba(0, 0, 0, .2);
 	--bs-list-group-action-color: #000;
-	--bs-list-group-action-hover-bg: var(--focus);
+	--bs-list-group-action-hover-bg: var(--hover);
 	--bs-list-group-action-active-color: #000;
-	--bs-list-group-action-active-bg: var(--focus);
+	--bs-list-group-action-active-bg: color-mix(in srgb, var(--hover) 85%, #000);
 }
 .list-group-item-linkedin {
 	--brand: 0, 123, 182;
